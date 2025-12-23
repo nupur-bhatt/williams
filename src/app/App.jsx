@@ -1,7 +1,15 @@
+import AppBar from "../components/AppBar/AppBar";
+import HomeCarousel from "../components/HomeCarousel/HomeCarousel";
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+
 function App() {
   return (
-    <div className="p-6">
-      Tailwind is working and colors are applied!
+      <div>    
+      <AppBar />
+       <Routes>
+        <Route path="/" element={<HomeCarousel />} />
+        
+      </Routes>
     </div>
   );
 }
