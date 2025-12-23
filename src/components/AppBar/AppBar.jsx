@@ -1,20 +1,76 @@
-import React from "react";
-import { Navbar, Container, Nav } from "react-bootstrap";
+import { useEffect, useState } from "react";
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
+import Container from "react-bootstrap/Container";
+import { NavLink } from "react-router-dom";
+
 import "./AppBar.css";
 
 export default function AppBar() {
-  return (
-    <Navbar expand="lg" className="appbar" fixed="top">
-      <Container>
-        <Navbar.Brand href="#home" className="brand">
-          Williams Inc.
-        </Navbar.Brand>
+  const [hidden, setHidden] = useState(false);
+  const [lastScrollY, setLastScrollY] = useState(0);
 
-        {/* No collapse → always visible */}
-        <Nav className="ms-auto">
-          <Nav.Link href="#services">Services</Nav.Link>
-          <Nav.Link href="#about">About</Nav.Link>
-          <Nav.Link href="#contact">Contact</Nav.Link>
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY && currentScrollY > 60) {
+        setHidden(true); // scrolling down
+      } else {
+        setHidden(false); // scrolling up
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [lastScrollY]);
+
+  return (
+    <Navbar
+      fixed="top"
+      className={`appbar ${hidden ? "appbar--hidden" : ""}`}
+    >
+      <Container className="appbar__container">
+        <Nav className="appbar__nav">
+
+          <Nav.Link
+            as={NavLink}
+            to="/"
+            className="appbar__link"
+          >
+            Home
+          </Nav.Link>
+
+          <Nav.Link
+            as={NavLink}
+            to="/"
+            className="appbar__link"
+          >
+            Services
+          </Nav.Link>
+
+          <Navbar.Brand className="appbar__brand">
+            Williams Inc.
+          </Navbar.Brand>
+
+          <Nav.Link
+            as={NavLink}
+            to="/"
+            className="appbar__link"
+          >
+            About
+          </Nav.Link>
+
+          <Nav.Link
+            as={NavLink}
+            to="/"
+            className="appbar__link"
+          >
+            Contact
+          </Nav.Link>
+
         </Nav>
       </Container>
     </Navbar>
