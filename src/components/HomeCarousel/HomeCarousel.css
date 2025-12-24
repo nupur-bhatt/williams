@@ -1,3 +1,8 @@
+.carousel-container{
+  width:100vw !important;
+  height:100vh !important;
+}
+
 .home-carousel {
   position: relative;
   height: 100vh;
@@ -28,14 +33,7 @@
   text-align: center;
   color: white;
   pointer-events: auto;
-  background: linear-gradient(
-    180deg,
-    rgba(20, 65, 89, 1) 12%,
-    rgba(20, 65, 89, 0.9) 25vh,
-    rgba(20, 65, 89, 0.7) 50vh,
-    rgba(20, 65, 89, 0.4) 80vh,
-    rgba(20, 65, 89, 0.3) 100%
-  );
+  background: var(--background-gradient) !important;
 }
 
 .gradient-text {
@@ -62,19 +60,52 @@
 }
 
 /* Button */
-.gradient-button {
-  background: transparent;
-  border: 1px solid white;
-  color: white;
-  padding: 0.75rem 2.5rem;
-  border-radius: var(--radius-lg);
-  font-weight: 400;
-  letter-spacing: 0.2em;
-  cursor: pointer;
+.gradient-button-schedule {
+  font-family: var(--font-body) !important;
+  color: var(--color-secondary) !important;
+  background: rgb(103, 112, 119, 0.8) !important;
+  border: 1px solid white !important;
+  padding: 0.75rem 2.5rem !important;
+  border-radius: var(--radius-lg) !important;
+  font-weight: 400 !important;
+  font-size: var(--text-md) !important;
+  letter-spacing: 0.08em !important;
+  margin-right: 0.8em !important;
+  transition: all 0.25s ease !important;
 }
 
-.gradient-button:hover {
+.gradient-button-schedule svg {
+  margin-right: 0.8em !important;
+}
+
+.gradient-button-schedule:hover {
   font-family: var(--font-body) !important;
-  background: white;
-  color: #144159;
+  background: white !important;
+  color: var(--color-primary) !important; 
+  font-weight: 800 !important;
+  font-size: var(--text-lg) !important;
+}
+
+.gradient-button-call {
+  background: transparent !important;
+  border: 1px solid white !important;
+  color: var(--color-secondary) !important;
+  padding: 0.75rem 2.5rem !important;
+  border-radius: var(--radius-lg) !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.08em !important;
+  font-family: var(--font-body) !important;
+  transition: all 0.25s ease !important;
+}
+
+.gradient-button-call svg {
+  margin-right: 0.8em !important;
+}
+
+.gradient-button-call:hover {
+  font-family: var(--font-body) !important;
+  background: white !important;
+  color: var(--color-primary) !important; 
+  font-weight: 800 !important;
+  font-size: var(--text-lg) !important;
 }

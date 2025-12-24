@@ -45,7 +45,7 @@ export default function AppBar() {
 
           <Nav.Link
             as={NavLink}
-            to="/"
+            to="/services"
             className="appbar__link"
           >
             Services
@@ -57,15 +57,15 @@ export default function AppBar() {
 
           <Nav.Link
             as={NavLink}
-            to="/"
+            to="/book"
             className="appbar__link"
           >
-            About
+            Book
           </Nav.Link>
 
           <Nav.Link
             as={NavLink}
-            to="/"
+            to="/contact"
             className="appbar__link"
           >
             Contact

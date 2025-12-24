@@ -27,9 +27,9 @@
   --text-2xl: 1.5rem;    /* 24px */
   --text-3xl: 1.875rem;  /* 30px */
   --text-4xl: 2.25rem;   /* 36px */
-  --text-tagline: 4.2rem;
+  --text-tagline: 4.5rem;
   --text-brand: 3.0rem;
-  --text-second-tagline: 1.3rem;
+  --text-second-tagline: 1.5rem;
   --text-bold-brand: 4.8rem; 
 
   /* Spacing */
@@ -46,4 +46,13 @@
   --tracking-wide: 0.12em;
   --tracking-wider: 0.18em;
 
+  /* Gradient */
+   --background-gradient: linear-gradient(
+    180deg,
+    rgba(20, 65, 89, 1) 12%,
+    rgba(20, 65, 89, 0.9) 25vh,
+    rgba(20, 65, 89, 0.7) 50vh,
+    rgba(20, 65, 89, 0.4) 80vh,
+    rgba(20, 65, 89, 0.3) 100%
+  );
 }
