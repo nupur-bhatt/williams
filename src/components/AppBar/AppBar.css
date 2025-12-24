@@ -33,12 +33,13 @@
   color: var(--color-secondary) !important;
   letter-spacing: var(--tracking-wider) !important;
   font-weight: var(--font-regular) !important;
+  transition: all 0.25s ease !important;
 }
 
-.appbar__link.active {
-  opacity: 0.6;
+.appbar__link.active{
+  font-weight: 800 !important;
+  font-size: var(--text-lg) !important;
 }
-
 
 .appbar__brand {
   font-family: var(--font-brand);

@@ -1,0 +1,6 @@
+.map-container {
+  width: 100%;
+  height: 400px; /* adjust if needed */
+  border: 1px solid #ccc; /* optional border */
+  border-radius: 0; /* clear edges */
+}

@@ -1,0 +1,76 @@
+.contact-section {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-info h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.contact-details p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+.contact-hours {
+  margin-top: 20px;
+}
+
+.contact-hours h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.contact-hours ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-hours li {
+  margin-bottom: 5px;
+}
+
+.contact-socials {
+  margin-top: 20px;
+}
+
+.contact-socials h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.social-links a {
+  margin-right: 15px;
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #0056b3;
+}
+
+.contact-map {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-map {
+    height: 400px;
+    margin-top: 20px;
+  }
+}
