@@ -17,9 +17,9 @@ export default function HomeCarousel() {
   const tagline2="Trusted quality. Consistent results."
 
   return (
-  <section className="carousel-container">
+  <Container fluid className="carousel-container">
     
-     <div className="carousel-gradient">
+     <Container fluid className="carousel-gradient">
       <h1 className="gradient-text">
           {heading}<b className="bold-tagline">{boldHeading}</b>
       </h1>
@@ -29,7 +29,7 @@ export default function HomeCarousel() {
         {tagline2}
       </p>
       
-      <Container>
+      <Container fluid>
         <Row>
           <Col> 
             <Button as="a" href="/book" className="gradient-button-schedule">
@@ -42,8 +42,9 @@ export default function HomeCarousel() {
             
           </Col>
         </Row>
+        
       </Container>
-    </div>
+    </Container>
 
       <Carousel fade interval={10000} controls={false} indicators={false} className="home-carousel">
         <Carousel.Item>
@@ -69,6 +70,6 @@ export default function HomeCarousel() {
         </Carousel.Item>  
       </Carousel>
 
-  </section>
+  </Container>
   );
 }

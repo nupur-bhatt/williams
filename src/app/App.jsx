@@ -10,13 +10,13 @@ function App() {
   return (
       <div>    
       <AppBar />
-       <Routes>
+       {/* <Routes>
         <Route path="/" element={<HomeCarousel />} />
         <Route path="/services" element={<Services />} />
         <Route path="/book" element={<Book />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About/>}/>
-      </Routes>
+      </Routes> */}
     </div>
   );
 }

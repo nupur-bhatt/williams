@@ -3,8 +3,9 @@
   /* Colors */
   --color-primary: #144159;
   --color-secondary: #ffffff;
-  --color-accent: #e63946;
+  --color-accent: #F97171;
   --color-gray: #677077;
+  --color-lightgray: #D2D5D8;
 
   /* Fonts */
   --font-brand: "Poiret One", cursive;
@@ -49,7 +50,7 @@
   /* Gradient */
    --background-gradient: linear-gradient(
     180deg,
-    rgba(20, 65, 89, 1) 12%,
+    rgba(20, 65, 89, 1) 10%,
     rgba(20, 65, 89, 0.9) 25vh,
     rgba(20, 65, 89, 0.7) 50vh,
     rgba(20, 65, 89, 0.4) 80vh,
