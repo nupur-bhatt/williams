@@ -1,49 +1,47 @@
 
 .carousel-container{
-  
+   position: relative;
+   min-height:50vh !important;
+   height: 100% !important;
 }
 
 .carousel-image {
-  
   object-fit: cover !important;
-}
-
-.parent-container{
-  
+  min-height:50vh !important;
 }
 
 /* Gradient overlay + CONTENT CONTAINER */
 .carousel-gradient {
   position: absolute;
   z-index: 2;
-  
+  min-height:50vh !important;
+  height: 100% !important;
   text-align: center !important;
   align-content: center !important;
-  justify-content: center !important ;
-  color: white;
   background: var(--background-gradient) !important;
-  padding:1.5rem !important
+  font-family: var(--font-body) !important;
+  color: var(--color-secondary) !important;
+}
+
+.carousel-text-container{
+  padding: 2.5rem !important;
 }
 
 .gradient-text {
-  color: white;
-  font-size: var(--text-tagline);
   font-family: var(--font-brand) !important;
-  font-weight: 100 !important;
-  letter-spacing: 0.08em;
-  margin-bottom: 1.5rem;
+  font-size: var(--text-tagline) !important;
 }
 
 .bold-tagline{
-  font-weight: 800 !important;
   font-size: var(--text-bold-brand) !important;
 }
 
 .gradient-subtext{
+  margin-top: 2rem !important;
+  margin-bottom: 4rem !important;
   font-size: var(--text-second-tagline) !important;
   font-family: var(--font-tagline) !important;
   font-weight: 100 !important;
-  margin-bottom: 3rem;
 }
 
 /* Button */
@@ -69,10 +67,13 @@
   font-family: var(--font-body) !important;
   background: white !important;
   color: var(--color-primary) !important; 
+  font-weight: 700 !important;
+  font-size: large !important;
+  transition: all 0.25s ease !important;
 }
 
 .gradient-button-call {
-  background: transparent !important;
+ background: transparent !important;
   border: 1px solid white !important;
   color: var(--color-secondary) !important;
   padding: 0.75rem 2.5rem !important;
@@ -85,10 +86,44 @@
 
 .gradient-button-call svg {
   margin-right: 0.8em !important;
+
 }
 
 .gradient-button-call:hover {
   font-family: var(--font-body) !important;
   background: white !important;
   color: var(--color-primary) !important;
+  font-weight: 700 !important;
+  font-size: large !important;
+  transition: all 0.25s ease !important;
+}
+
+
+@media (max-width: 768px){
+
+  .carousel-container{
+    min-height:95vh !important;
+    height: 100% !important;
+  }
+
+  .carousel-image {
+    min-height:95vh !important;
+  }
+
+}
+
+
+/*SMALL SCREENS */
+@media (max-width: 576px) {
+
+  .carousel-container{
+    min-height:95vh !important;
+    height: 100% !important;
+  }
+
+  .carousel-image {
+    min-height:95vh !important;
+  }
+
+ 
 }

@@ -18,43 +18,43 @@ export default function HomeCarousel() {
   const about = "About Us";
 
   return (
-  <Container fluid className="g-0 parent__container">
-     <Container fluid className="g-0 carousel-gradient">
-          
-        <h1 className="gradient-text">
-            {heading}<b className="bold-tagline">{boldHeading}</b>
-        </h1>
-        <h6 className="gradient-subtext">
-            {tagline1}
-            <br/>
-            {tagline2}
-        </h6>
-        <Button as="a" href="/book" className="gradient-button-schedule">
-        <Calendar2EventFill size={25} /> Schedule Service
-        </Button>
-        
-        <Button as="a" href="tel:+16473335392" className="gradient-button-call">
-        <TelephoneFill size={25} /> Contact Us
-        </Button>
+      <Container fluid className="g-0 carousel-container">
+        <Container fluid className="g-0 carousel-gradient">
+          <Container fluid className="g-0 carousel-text-container">
+            <h1 className="gradient-text">
+                {heading}<b className="bold-tagline">{boldHeading}</b>
+            </h1>
+            <h6 className="gradient-subtext">
+                {tagline1}
+                <br/>
+                {tagline2}
+            </h6>
+            <Button as="a" href="/book" className="gradient-button-schedule">
+            <Calendar2EventFill size={25} /> Schedule Service
+            </Button>
+            
+            <Button as="a" href="tel:+16473335392" className="gradient-button-call">
+            <TelephoneFill size={25} /> Contact Us
+            </Button>
+          </Container>  
           
       </Container>
-      <Container fluid className="g-0 carousel-container">
       <Carousel fade interval={10000} controls={false} indicators={false} >
-        <Carousel.Item>
+        <Carousel.Item className="carousel-img-container">
           <img
             className="d-block w-100 carousel-image"
             src={slide1}
             alt="Slide 1"
           />
         </Carousel.Item>
-        <Carousel.Item>
+        <Carousel.Item className="carousel-img-container">
           <img
             className="d-block w-100 carousel-image"
             src={slide2}
             alt="Slide 2"
           />
         </Carousel.Item>
-        <Carousel.Item>
+        <Carousel.Item className="carousel-img-container">
           <img
             className="d-block w-100 carousel-image"
             src={slide3}
@@ -63,6 +63,5 @@ export default function HomeCarousel() {
         </Carousel.Item>  
       </Carousel>
       </Container>
-  </Container>
   );
 }
