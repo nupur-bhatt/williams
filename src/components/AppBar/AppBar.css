@@ -1,45 +1,96 @@
 
 .appbar {
-  background: var(--color-primary) !important;
+  background-color: var(--color-primary) !important;
   transition: transform 0.3s ease !important;
 }
 
-.appbar--hidden {
-  transform: translateY(-100%) !important;
+.appbar__brand {
+  font-family: var(--font-brand) !important;
+  font-size: var(--text-brand) !important;
+  color: var(--color-secondary) !important;
+  margin-left: 1rem !important;
 }
 
-.appbar__container {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: space-between !important;
-  margin-top: var(--spacing-md) !important;
-  margin-bottom: var(--spacing-md) !important;
+.appbar__toggle {
+  margin: 0.8em !important;
+  border-color: transparent !important;
+  color: var(--color-secondary) !important;
 }
 
 .appbar__nav {
   display: flex !important;
-  align-items: !important;
-  gap: 2.5rem !important;
+  gap: 1.75rem !important;
   margin: 0 auto !important;
 }
 
 .appbar__link {
   font-family: var(--font-body) !important;
   text-transform: lowercase !important;
-  color: var(--color-secondary) !important;
   letter-spacing: var(--tracking-wider) !important;
   font-weight: var(--font-regular) !important;
   transition: all 0.25s ease !important;
+  align-self: center !important;
+  text-decoration: none !important;
 }
 
 .appbar__link.active{
-  font-weight: 800 !important;
-  font-size: var(--text-lg) !important;
+  font-weight: 700 !important;
+  transition: all 0.25s ease !important;
+  color: var(--color-secondary) !important;
 }
 
-.appbar__brand {
-  font-family: var(--font-brand);
-  font-size: var(--text-brand) !important;
+.appbar__dropdown__item{
+  text-align: center !important;
+}
+
+.appbar__dropdown__item:hover{
   color: var(--color-secondary) !important;
-  border-radius: var(--radius-button) !important;
+  background-color: var(--color-gray) !important;
+}
+
+.appbar__dropdown__item:active{
+  color: var(--color-secondary) !important;
+  background-color: var(--color-primary) !important;
+}
+
+.appbar__dropdown__item.active{
+  color: var(--color-secondary) !important;
+  font-weight: 700 !important;
+  background-color: var(--color-mediumgray) !important;
+}
+
+/* small screens */
+
+@media (max-width: 576px) {
+
+  .appbar__brand {
+    font-size: var(--text-2xl) !important;
+  }
+
+  .appbar__toggle {
+    margin: 0.25em !important;
+  }
+
+  .appbar__nav {
+    gap: 0.1rem !important;
+  }
+
+  .appbar__link {
+    letter-spacing: var(--tracking-wide) !important;
+    font-size: var(--text-sm) !important;
+  }
+
+  .appbar__link.active{
+    font-weight: 600 !important;
+  }
+
+  .appbar__dropdown__item{
+    font-size: var(--text-sm) !important;
+    letter-spacing: var(--tracking-wide) !important;
+  }
+
+  .appbar__dropdown__item.active{
+  font-weight: 600 !important;
+  }
+
 }

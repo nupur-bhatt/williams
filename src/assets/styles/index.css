@@ -2,10 +2,17 @@
 :root {
   /* Colors */
   --color-primary: #144159;
+  --color-primary-light: #557083;
+  --color-primary-lighter: #93A3B0;
   --color-secondary: #ffffff;
   --color-accent: #F97171;
+  --color-accent-light:#FF9A96;
+  --color-accent-opaque: rgb(255,243,241);
   --color-gray: #677077;
-  --color-lightgray: #D2D5D8;
+  --color-mediumgray: #81888E;
+  --color-lightgray: #B7BBBF;
+  --color-lightergray: #D3D6D8;
+  --color-primary-placeholder: rgb(33,37,41, 0.65);
 
   /* Fonts */
   --font-brand: "Poiret One", cursive;
@@ -28,8 +35,8 @@
   --text-2xl: 1.5rem;    /* 24px */
   --text-3xl: 1.875rem;  /* 30px */
   --text-4xl: 2.25rem;   /* 36px */
-  --text-tagline: 4.5rem;
-  --text-brand: 3.0rem;
+  --text-tagline: 3.5rem;
+  --text-brand: 2.5rem;
   --text-second-tagline: 1.5rem;
   --text-bold-brand: 4.8rem; 
 
@@ -50,10 +57,13 @@
   /* Gradient */
    --background-gradient: linear-gradient(
     180deg,
-    rgba(20, 65, 89, 1) 10%,
-    rgba(20, 65, 89, 0.9) 25vh,
-    rgba(20, 65, 89, 0.7) 50vh,
-    rgba(20, 65, 89, 0.4) 80vh,
-    rgba(20, 65, 89, 0.3) 100%
+    rgba(20, 65, 89, 1) 8%,
+    rgba(20, 65, 89, 0.9) 25%,
+    rgba(20, 65, 89, 0.7) 50%,
+    rgba(20, 65, 89, 0.4) 80%,
+    rgba(20, 65, 89, 0.0) 100%
   );
+
+  background-color: var(--color-primary);
+  
 }
