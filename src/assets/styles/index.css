@@ -35,10 +35,10 @@
   --text-2xl: 1.5rem;    /* 24px */
   --text-3xl: 1.875rem;  /* 30px */
   --text-4xl: 2.25rem;   /* 36px */
-  --text-tagline: 3.5rem;
+  --text-tagline: 4rem;
   --text-brand: 2.5rem;
-  --text-second-tagline: 1.5rem;
-  --text-bold-brand: 4.8rem; 
+  --text-second-tagline: 1.4rem;
+  --text-bold-brand: 4.5rem; 
 
   /* Spacing */
   --spacing-sm: 0.5rem;
@@ -58,9 +58,9 @@
    --background-gradient: linear-gradient(
     180deg,
     rgba(20, 65, 89, 1) 8%,
-    rgba(20, 65, 89, 0.9) 25%,
-    rgba(20, 65, 89, 0.7) 50%,
-    rgba(20, 65, 89, 0.4) 80%,
+    rgba(20, 65, 89, 0.9) 20%,
+    rgba(20, 65, 89, 0.6) 45%,
+    rgba(20, 65, 89, 0.2) 80%,
     rgba(20, 65, 89, 0.0) 100%
   );
 

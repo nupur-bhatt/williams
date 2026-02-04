@@ -8,7 +8,7 @@ export default function Home(){
     return(
         <Container fluid className="g-0">
            <HomeCarousel />
-            <About />
+            {/* <About /> */}
         </Container>
     );
 }
