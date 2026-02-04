@@ -1,0 +1,21 @@
+.about-gradient{
+    background-color: var( --color-gray) !important;
+    color:var(--color-secondary) !important;
+    align-content: center !important;
+    justify-content: center !important;
+    padding: 2.5rem !important;
+}
+
+.about-heading{
+    margin: 1rem !important;
+    margin-bottom: 2rem !important;
+    text-transform: uppercase !important;
+    font-family: var(--font-body) !important;
+}
+
+.about-content{
+    font-family: var(--font-body) !important;
+    letter-spacing: 0.09em;
+    font-weight: 200 !important;
+    margin:1rem !important;
+}

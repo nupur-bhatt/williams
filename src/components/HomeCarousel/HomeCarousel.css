@@ -1,45 +1,37 @@
+
 .carousel-container{
-  width:100% !important;
-  height:100% !important;
-}
-
-.home-carousel {
-  height: 100% !important;
-  width: 100% !important;
-
+  
 }
 
 .carousel-image {
-  width: 100%;
-  height: 100%;
-  object-fit: contain !important;
+  
+  object-fit: cover !important;
+}
+
+.parent-container{
+  
 }
 
 /* Gradient overlay + CONTENT CONTAINER */
 .carousel-gradient {
   position: absolute;
-
   z-index: 2;
-  height:100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  
+  text-align: center !important;
+  align-content: center !important;
+  justify-content: center !important ;
   color: white;
-  pointer-events: auto;
   background: var(--background-gradient) !important;
+  padding:1.5rem !important
 }
 
 .gradient-text {
-  width:70% !important;
   color: white;
-  z-index: 2;
   font-size: var(--text-tagline);
   font-family: var(--font-brand) !important;
   font-weight: 100 !important;
   letter-spacing: 0.08em;
-  margin-bottom: 1.0rem;
+  margin-bottom: 1.5rem;
 }
 
 .bold-tagline{
@@ -51,7 +43,7 @@
   font-size: var(--text-second-tagline) !important;
   font-family: var(--font-tagline) !important;
   font-weight: 100 !important;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 /* Button */
@@ -65,20 +57,18 @@
   font-weight: 400 !important;
   font-size: var(--text-md) !important;
   letter-spacing: 0.08em !important;
-  margin-right: 0.8em !important;
+  margin: 1em !important;
   transition: all 0.25s ease !important;
 }
 
 .gradient-button-schedule svg {
-  margin-right: 0.8em !important;
+  margin-right: 1em !important;
 }
 
 .gradient-button-schedule:hover {
   font-family: var(--font-body) !important;
   background: white !important;
   color: var(--color-primary) !important; 
-  font-weight: 800 !important;
-  font-size: var(--text-lg) !important;
 }
 
 .gradient-button-call {
@@ -100,7 +90,5 @@
 .gradient-button-call:hover {
   font-family: var(--font-body) !important;
   background: white !important;
-  color: var(--color-primary) !important; 
-  font-weight: 800 !important;
-  font-size: var(--text-lg) !important;
+  color: var(--color-primary) !important;
 }
