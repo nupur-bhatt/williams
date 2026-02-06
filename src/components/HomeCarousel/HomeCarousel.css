@@ -25,6 +25,7 @@
 
 .carousel-text-container{
   padding: 2.5rem !important;
+  margin-bottom: 2rem !important;
 }
 
 .gradient-text {
@@ -73,7 +74,7 @@
 }
 
 .gradient-button-call {
- background: transparent !important;
+  background: rgb(103, 112, 119, 0.4) !important;
   border: 1px solid white !important;
   color: var(--color-secondary) !important;
   padding: 0.75rem 2.5rem !important;
@@ -110,6 +111,41 @@
     min-height:95vh !important;
   }
 
+  .gradient-text {
+    font-size: 2.75rem !important;
+  }
+
+  .bold-tagline{
+    font-size: 3.5rem !important;
+  }
+ 
+  .gradient-subtext{
+    font-size: medium !important;
+    margin-bottom: 2rem !important;
+  }
+
+  .gradient-button-schedule {
+    font-size: var(--text-xs) !important;
+  }
+
+  .gradient-button-schedule:hover {
+    font-weight: 700 !important;
+    font-size: var(--text-sm) !important;
+  }
+
+  .gradient-button-call {
+     font-size: var(--text-xs) !important;
+  }
+
+  .gradient-button-call svg {
+    height: 1.2rem !important;
+    width: 1.2rem !important;
+  }
+
+   .gradient-button-call:hover {
+    font-weight: 700 !important;
+     font-size: var(--text-sm) !important;
+  }
 }
 
 
@@ -125,5 +161,40 @@
     min-height:95vh !important;
   }
 
+  .gradient-text {
+    font-size: 2.75rem !important;
+  }
+
+  .bold-tagline{
+    font-size: 3.5rem !important;
+  }
  
+  .gradient-subtext{
+    font-size: medium !important;
+    margin-bottom: 2rem !important;
+  }
+
+  .gradient-button-schedule {
+    font-size: var(--text-xs) !important;
+  }
+
+  .gradient-button-schedule:hover {
+    font-weight: 700 !important;
+    font-size: var(--text-sm) !important;
+  }
+
+  .gradient-button-call {
+     font-size: var(--text-xs) !important;
+  }
+
+  .gradient-button-call svg {
+    height: 1.2rem !important;
+    width: 1.2rem !important;
+  }
+
+   .gradient-button-call:hover {
+    font-weight: 700 !important;
+     font-size: var(--text-sm) !important;
+  }
+
 }

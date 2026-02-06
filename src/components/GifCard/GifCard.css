@@ -1,0 +1,34 @@
+.gifcard{
+    border: none !important;
+    background-color: var(--color-primary) !important;
+    color: var(--color-secondary) !important;
+    border-radius: 5rem !important;
+}
+
+.gifcard_img{
+    object-fit: cover !important;
+}
+
+.gifcard_text{
+   font-family: var(--font-body) !important;
+   text-transform: uppercase !important;
+   letter-spacing: 0.1rem !important;
+   font-size: small !important;
+   padding: 1.5rem !important;
+   font-weight: 700 !important;
+}
+
+@media (max-width: 768px){
+    .gifcard_text{
+        font-size: x-small !important;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .gifcard_text{
+        padding:0.75rem !important;
+        font-size: xx-small !important;
+    }
+
+}

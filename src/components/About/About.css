@@ -1,21 +1,87 @@
-.about-gradient{
-    background-color: var( --color-gray) !important;
-    color:var(--color-secondary) !important;
-    align-content: center !important;
-    justify-content: center !important;
+.about-parent-container{
+    margin: 0 !important;
+    padding: 0 !important;
+    color: var(--color-secondary) !important;
+    font-family: var(--font-body) !important;
+    align-items: center !important;
+    text-align: center !important ;
+}
+
+.choose-us-container{
+    background-color: var(--color-lightestgray) !important;
+    color: var(--color-primary) !important;
     padding: 2.5rem !important;
+    text-align: center !important ;
+    align-items: center !important;
+}
+
+.choose-us-column{
+    text-align: center !important ;
+    align-items: center !important;
+    height: 100% !important;
+}
+
+.choose-us-heading{
+    font-family: var(--font-body) !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.4rem !important;
+    font-size: var(--text-brand) !important;
+    margin-top: 2.5rem !important;
+    margin-bottom: 4rem !important;
+    font-variant: small-caps !important ;
+}
+
+.choose-us-firstline{
+    font-family: var(--font-tagline) !important;
+    font-weight: 800 !important;
+    font-size: var(--text-2xl) !important;
+    margin-bottom: 2.5rem !important;
+    letter-spacing: 0.1rem ;
+}
+
+.choose-us-secondline{
+    font-family: var(--font-tagline) !important;
+    font-weight: 500 !important;
+    margin-bottom: 2.5rem !important;
+    font-size: var(--text-xl) !important;
+}
+
+.choose-cards{
+    margin-bottom: 2.5rem !important;
+}
+
+.about-us-container{
+    background-color: var( --color-lightergray) !important;
+    color:var(--color-primary) !important;
+    padding: 2.5rem !important;
+    text-align: center !important ;
+    align-items: center !important;
 }
 
 .about-heading{
-    margin: 1rem !important;
-    margin-bottom: 2rem !important;
-    text-transform: uppercase !important;
     font-family: var(--font-body) !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.4rem !important;
+    font-size: var(--text-brand) !important;
+    margin-top: 2.5rem !important;
+    margin-bottom: 4rem !important;
+    font-variant: small-caps !important ;
 }
 
 .about-content{
-    font-family: var(--font-body) !important;
-    letter-spacing: 0.09em;
-    font-weight: 200 !important;
-    margin:1rem !important;
+    font-family: var(--font-tagline) !important;
+    font-weight: 500 !important;
+    font-size: var(--text-xl) !important;
+}
+
+.card-padding-top-2{
+    padding-top: 2rem !important;
+}
+
+.card-padding-top-3{
+    padding-top: 3rem !important;
+}
+
+.card-padding-top-4{
+    padding-top: 4rem !important;
 }
