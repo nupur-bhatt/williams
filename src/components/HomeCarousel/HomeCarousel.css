@@ -17,15 +17,15 @@
   min-height:50vh !important;
   height: 100% !important;
   text-align: center !important;
-  align-content: center !important;
   background: var(--background-gradient) !important;
   font-family: var(--font-body) !important;
   color: var(--color-secondary) !important;
 }
 
 .carousel-text-container{
-  padding: 2.5rem !important;
-  margin-bottom: 2rem !important;
+  margin-top: 2.5rem !important;
+  padding: 3rem !important;
+  margin-bottom: 2.5rem !important;
 }
 
 .gradient-text {
@@ -58,6 +58,7 @@
   letter-spacing: 0.08em !important;
   margin: 1em !important;
   transition: all 0.25s ease !important;
+  text-transform: uppercase !important;
 }
 
 .gradient-button-schedule svg {
@@ -83,6 +84,7 @@
   letter-spacing: 0.08em !important;
   font-family: var(--font-body) !important;
   transition: all 0.25s ease !important;
+  text-transform: uppercase !important;
 }
 
 .gradient-button-call svg {
@@ -105,6 +107,11 @@
   .carousel-container{
     min-height:95vh !important;
     height: 100% !important;
+  }
+
+  .carousel-text-container{
+    margin-top: 0 !important;
+    padding: 2rem !important;
   }
 
   .carousel-image {
@@ -163,6 +170,11 @@
 
   .gradient-text {
     font-size: 2.75rem !important;
+  }
+
+   .carousel-text-container{
+    margin-top: 0 !important;
+    padding: 2rem !important;
   }
 
   .bold-tagline{

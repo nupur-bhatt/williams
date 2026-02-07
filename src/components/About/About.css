@@ -10,7 +10,7 @@
 .choose-us-container{
     background-color: var(--color-lightestgray) !important;
     color: var(--color-primary) !important;
-    padding: 2.5rem !important;
+    padding: 2rem !important;
     text-align: center !important ;
     align-items: center !important;
 }
@@ -19,6 +19,7 @@
     text-align: center !important ;
     align-items: center !important;
     height: 100% !important;
+    width: 100% !important;
 }
 
 .choose-us-heading{
@@ -26,8 +27,8 @@
     font-weight: 500 !important;
     letter-spacing: 0.4rem !important;
     font-size: var(--text-brand) !important;
-    margin-top: 2.5rem !important;
-    margin-bottom: 4rem !important;
+    margin-top: 1.8rem !important;
+    margin-bottom: 2rem !important;
     font-variant: small-caps !important ;
 }
 
@@ -35,27 +36,37 @@
     font-family: var(--font-tagline) !important;
     font-weight: 800 !important;
     font-size: var(--text-2xl) !important;
-    margin-bottom: 2.5rem !important;
     letter-spacing: 0.1rem ;
+    margin-bottom: 2.5rem !important;
 }
 
 .choose-us-secondline{
     font-family: var(--font-tagline) !important;
     font-weight: 500 !important;
-    margin-bottom: 2.5rem !important;
     font-size: var(--text-xl) !important;
 }
 
 .choose-cards{
+    padding:1rem !important;
     margin-bottom: 2.5rem !important;
 }
 
+.choose-text{
+    padding:2rem !important;
+}
+
 .about-us-container{
-    background-color: var( --color-lightergray) !important;
-    color:var(--color-primary) !important;
-    padding: 2.5rem !important;
+    background-color: var(--color-lightgray);
+    color:var(--color-secondary) !important;
+    padding: 2rem !important; 
     text-align: center !important ;
     align-items: center !important;
+}
+
+.mission_img{
+    object-fit: cover !important;
+    width: 100% !important;
+    height: 100% !important;
 }
 
 .about-heading{
@@ -64,7 +75,7 @@
     letter-spacing: 0.4rem !important;
     font-size: var(--text-brand) !important;
     margin-top: 2.5rem !important;
-    margin-bottom: 4rem !important;
+    margin-bottom: 1rem !important;
     font-variant: small-caps !important ;
 }
 
@@ -74,14 +85,10 @@
     font-size: var(--text-xl) !important;
 }
 
-.card-padding-top-2{
-    padding-top: 2rem !important;
-}
-
-.card-padding-top-3{
-    padding-top: 3rem !important;
-}
-
-.card-padding-top-4{
-    padding-top: 4rem !important;
+.about_quote{
+    font-family: var(--font-brand) !important;
+    font-size: var(--text-3xl) !important;
+    letter-spacing: 0.1rem !important;
+    font-weight: 600 !important;
+    padding: 1.5rem !important;
 }
