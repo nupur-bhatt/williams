@@ -8,7 +8,7 @@
 }
 
 .choose-us-container{
-    background-color: var(--color-lightestgray) !important;
+    background-color: var(--color-lightergray) !important;
     color: var(--color-primary) !important;
     padding: 2rem !important;
     text-align: center !important ;
@@ -67,6 +67,7 @@
     object-fit: cover !important;
     width: 100% !important;
     height: 100% !important;
+    padding:2.5rem !important;
 }
 
 .about-heading{
@@ -75,20 +76,22 @@
     letter-spacing: 0.4rem !important;
     font-size: var(--text-brand) !important;
     margin-top: 2.5rem !important;
-    margin-bottom: 1rem !important;
+    margin-bottom: 2rem !important;
     font-variant: small-caps !important ;
 }
 
 .about-content{
     font-family: var(--font-tagline) !important;
-    font-weight: 500 !important;
+    font-weight: 300 !important;
     font-size: var(--text-xl) !important;
+    padding: 2rem !important;
 }
 
 .about_quote{
     font-family: var(--font-brand) !important;
     font-size: var(--text-3xl) !important;
     letter-spacing: 0.1rem !important;
-    font-weight: 600 !important;
-    padding: 1.5rem !important;
+    font-weight: 500 !important;
+    padding-right: 2rem !important;
+    padding-left: 2rem !important;
 }

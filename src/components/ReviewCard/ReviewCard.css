@@ -1,0 +1,28 @@
+.review_card{
+    margin: 1rem !important;
+    min-width:20vh !important;
+    border: none !important;
+    border-radius: 0 !important;
+    background-color: var(--color-secondary);
+    color: var(--color-primary) !important;
+    padding: 1.5rem !important;
+    align-items: center !important;
+    align-content: center !important;
+}
+
+.review_card_content{
+    font-family: var(--font-tagline) !important;
+    font-size: var(--text-xl) !important;
+    margin-bottom: 2rem !important;
+}
+
+.review_card_author{
+    text-transform: uppercase !important;
+    letter-spacing: 0.1rem !important;
+}
+
+.review_card_location{
+    color: var(--color-primary-lighter);
+    font-family: var(--font-body) !important;
+    
+}
