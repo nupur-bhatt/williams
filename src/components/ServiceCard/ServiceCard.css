@@ -1,0 +1,46 @@
+.sevices_card {
+    text-align: center !important;
+    align-items: center !important;
+    border: none !important;
+    border-radius: 0 !important;
+}
+
+.services_card_button{
+  font-family: var(--font-body) !important;
+  color: var(--color-secondary) !important;
+  background: var(--color-primary) !important;
+  border: 15px solid var(--color-lightergray) !important;
+  border-radius: 0 !important;
+  width: 100% !important;
+  padding: 0 !important;
+  transition: all 0.25s ease-out !important;
+}
+
+.services_card_heading{
+  font-weight: 500 !important;
+  font-size: var(--text-md) !important;
+  letter-spacing: 0.3em !important;
+  text-transform: uppercase !important;
+  text-align: center !important;
+  width: 100% !important;
+  padding: 1.5rem !important;
+}
+
+.services_card_button:hover {
+  font-family: var(--font-body) !important;
+  background: white !important;
+  color: var(--color-primary) !important; 
+  font-weight: 800 !important;
+  transition: all 0.25s ease-out !important;
+  border: 15px solid white !important;
+}
+
+.services_card_img{
+    object-fit: cover !important;
+    min-height: 20vh !important;
+    max-height: 20vh !important;
+    width: 100% !important;
+    padding: 0 !important;
+    opacity: 0.9 !important;
+}
+

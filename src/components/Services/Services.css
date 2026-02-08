@@ -1,0 +1,21 @@
+.services_container{
+    background-color: var(--color-lightergray) !important;
+    padding: 2rem !important;
+    text-align: center !important;
+    align-items: center !important;
+}
+
+.services_row{
+    text-align: center !important;
+    align-items: center !important;
+}
+
+.services_heading{
+    font-family: var(--font-body) !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.4rem !important;
+    font-size: var(--text-brand) !important;
+    margin-top: 1.8rem !important;
+    margin-bottom: 2rem !important;
+    font-variant: small-caps !important ;
+}

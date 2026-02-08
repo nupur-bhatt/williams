@@ -8,7 +8,8 @@ import junk_removal_dumpster from "../../assets/images/recycle-bin.svg";
 import commercial_culture from "../../assets/images/business-deal.svg";
 import schedule_calendar from "../../assets/images/calendar-check.svg";
 import crew_professional from "../../assets/images/team-check.svg";
-import mission_image from "../../assets/images/vitaly-gariev-RLaaGzDN-xE-unsplash.jpg"
+// import mission_image from "../../assets/images/vitaly-gariev-RLaaGzDN-xE-unsplash.jpg";
+import mission_image from "../../assets/images/holding-bucket-of-cleaning-supplies.jpg";
 
 export default function About(){
 
@@ -86,12 +87,12 @@ export default function About(){
                     </Col>
                 </Row>
             </Container>
-            <Container fluid className='g-0'>
+            <Container fluid className='g-0 about-us-container'>
                 <Row className='g-0'>
-                    <Col xs={12} sm={12} md={4} lg={4} xl={4}>
+                    <Col xs={12} sm={12} md={6} lg={5} xl={5}>
                         <Image src={mission_image} className='mission_img'/>
                     </Col>
-                    <Col xs={12} sm={12} md={8} lg={8} xl={8} className="g-0 about-us-container">
+                    <Col xs={12} sm={12} md={6} lg={7} xl={7} className="g-0 ">
                         <Row><h2 className='about-heading'>{headline}</h2></Row>
                             <p className='about_quote'>{about_quote}</p>
                         <Row><p className='about-content'>{about_content}</p></Row>
