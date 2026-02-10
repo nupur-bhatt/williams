@@ -50,7 +50,7 @@ export default function Reviews(){
     console.log(reviews[0]);
 
     return(
-        <Container fluid className="g-0 reviews_container">
+        <Container fluid className="g-0 reviews_container"><hr/>
             <Row className="g-0">
                 
                 <Col xs={12} sm={12} md={6} lg={7} xl={7}>

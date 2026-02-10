@@ -4,6 +4,7 @@ import Services from "../components/Services/Services";
 import Book from "../components/Book/Book";
 import Contact from "../components/Contact/Contact";
 import { Routes, Route } from 'react-router-dom';
+import Footer from "../components/Footer/Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/book" element={<Book />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </>
   );
 }

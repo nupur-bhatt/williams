@@ -69,10 +69,6 @@ export default function Questions(){
                 <QuestionCard card_info={faqs[8]} />
             </Col>
         </Row>
-        
-        <h6 className="questions_contact_us">{pre_contact_us} <em><a href="/contact">Contact us</a> to book a free quote today.</em>
-            
-        </h6>
   
     </Container>
     );

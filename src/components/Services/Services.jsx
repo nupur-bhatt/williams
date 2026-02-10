@@ -43,8 +43,8 @@ export default function Services(){
                 <Col xs={12} sm={12} md={4} lg={4} xl={4} className="p-2">
                     <ServiceCard service_card={moving_service_card} img_src={moving_img}/>
                 </Col>
-
             </Row>
+          
         </Container>
     );
 }
