@@ -7,6 +7,7 @@
 
 .services_card_button{
   font-family: var(--font-body) !important;
+  font-weight: 400 !important;
   color: var(--color-secondary) !important;
   background: var(--color-primary) !important;
   border: 15px solid var(--color-lightergray) !important;
@@ -17,7 +18,6 @@
 }
 
 .services_card_heading{
-  font-weight: 500 !important;
   font-size: var(--text-md) !important;
   letter-spacing: 0.3em !important;
   text-transform: uppercase !important;

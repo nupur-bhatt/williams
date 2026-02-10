@@ -13,12 +13,12 @@ import mission_image from "../../assets/images/holding-bucket-of-cleaning-suppli
 
 export default function About(){
 
-    const headline = "Our Mission";
+    const headline = "Our mission";
     const about_quote = `"At our company, our mission is to empower business by providing comprehensive solutions that enhance efficiency and professionalism."`;
     const about_content = "We specialize in junk removal, ensuring that businesses can maintain a clean and clutter-free environment. Our top-notch cleaning services promote a healthy workspace, enabling employees to thrive. Additionally, our reliable moving services facilitate seamless transitions, allowing businesses to focus on their core operations. We are dedicated to serving our community with integrity, reliability and exceptional customer service, helping small businesses flourish.";
     const choose_secondline = "Whether it’s a commercial office, retail store, or residential home, our team delivers meticulous cleaning that keeps your environment safe, healthy, and inviting for employees, clients, and residents alike.";
     const choose_firstline = "Comprehensive cleaning, moving, and junk removal for commercial and residential spaces.";
-    const choose_headline = "Why Choose Us?";
+    const choose_headline = "Why choose us?";
 
     const moving_card = {
         heading: "Stress-Free Moving Services",
@@ -55,7 +55,7 @@ export default function About(){
             <Container fluid className='g-0 choose-us-container'>
                 <Row className='g-0'><h2 className='choose-us-heading'>{choose_headline}</h2></Row>
                 <Row className='g-0'>
-                    <Col xs={12} sm={12} md={12} lg={4} xl={4} className='g-0 align-content-center choose-text'>
+                    <Col xs={12} sm={12} md={12} lg={4} xl={4} className='g-0  choose-text'>
                         <Row className='g-0'>
                             <h6 className='choose-us-firstline'>{choose_firstline}</h6>
                         </Row>

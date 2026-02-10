@@ -5,12 +5,13 @@
   --color-primary-light: #557083;
   --color-primary-lighter: #93A3B0;
   --color-primary-opaque: rgb(20, 65, 89, 0.1);
+  --color-primary-border-opaque: rgb(20, 65, 89, 0.2);
   --color-secondary: #ffffff;
   --color-accent: #F97171;
   --color-accent-light:#FF9A96;
   --color-accent-opaque: rgb(255,243,241);
   --color-gray: #677077;
-  --color-mediumgray: #959ba0;
+  --color-mediumgray: #767e84;
   --color-lightgray: #abb0b4;
   --color-lightergray: #e7e8e8;
   --color-lightestgray: #F3F4F4;

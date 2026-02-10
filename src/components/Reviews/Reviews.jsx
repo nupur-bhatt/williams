@@ -7,7 +7,8 @@ import reviews_image from "../../assets/images/vitaly-gariev-RLaaGzDN-xE-unsplas
 export default function Reviews(){
 
     const headline = "What our customers are saying";
-    const secondline = "Customer Experiences That Speak for Themselves";
+    const secondline = "Trusted by Homes & Businesses Across Ontario";
+    const content = "From residential cleanups to large commercial projects, clients rely on us for dependable service, clear communication, and consistent results. We’re proud to support both businesses and homeowners — here’s what they have to say about working with our team.";
     const reviews = 
     [
         {
@@ -56,6 +57,7 @@ export default function Reviews(){
                 <Row className="reviews_heading_container">
                     <h2 className='reviews_heading'>{headline}</h2>
                     <p className='reviews_subheading'>{secondline}</p>
+                    <p className="reviews_content">{content}</p>
                 </Row>
                 <Container fluid className="scroll_container_padding">
                     <div className="reviews_scroll_container">

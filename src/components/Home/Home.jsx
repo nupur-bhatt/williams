@@ -4,6 +4,7 @@ import './Home.css';
 import About from '../About/About';
 import Services from '../Services/Services';
 import Reviews from '../Reviews/Reviews';
+import Questions from '../Questions/Questions';
 
 export default function Home(){
 
@@ -12,7 +13,8 @@ export default function Home(){
             <HomeCarousel />
             <Services />
             <About />    
-            <Reviews />   
+            <Reviews /> 
+            <Questions  />
         </Container>
     );
 }

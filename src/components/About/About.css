@@ -48,7 +48,7 @@
 
 .choose-cards{
     padding:1rem !important;
-    margin-bottom: 2.5rem !important;
+    margin-bottom: 1rem !important;
 }
 
 .choose-text{
@@ -56,7 +56,7 @@
 }
 
 .about-us-container{
-    background-color: var(--color-lightgray);
+    background-color: var(--color-gray);
     color:var(--color-secondary) !important;
     padding: 2rem !important; 
     text-align: center !important ;
@@ -82,9 +82,12 @@
 
 .about-content{
     font-family: var(--font-tagline) !important;
-    font-weight: 300 !important;
+    font-weight: 500 !important;
     font-size: var(--text-xl) !important;
-    padding: 2rem !important;
+    padding-right: 2rem !important;
+    padding-left: 2rem !important;
+    padding-bottom: 2rem !important;
+    padding-top:1rem !important
 }
 
 .about_quote{
@@ -94,4 +97,24 @@
     font-weight: 500 !important;
     padding-right: 2rem !important;
     padding-left: 2rem !important;
+}
+     
+
+@media (max-width: 768px){
+
+    .about-heading{
+        margin-top: 1rem !important;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .mission_img{
+        padding: 1rem !important;
+    }
+
+    .about-heading{
+        margin-top: 1rem !important;
+    }
+
 }
