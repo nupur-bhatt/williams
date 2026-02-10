@@ -33,6 +33,11 @@
   text-decoration: none !important;
 }
 
+.appbar__link .nav-link{
+  color: var(--color-secondary) !important;
+  transition: all 0.25s ease !important;
+}
+
 .appbar__link.active{
   font-weight: 700 !important;
   transition: all 0.25s ease !important;

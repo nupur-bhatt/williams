@@ -11,6 +11,7 @@
     background-color: var(--color-lightergray) !important;
     color: var(--color-primary) !important;
     padding: 2rem !important;
+    padding-top: 0 !important;
     text-align: center !important ;
     align-items: center !important;
 }
@@ -27,7 +28,7 @@
     font-weight: 500 !important;
     letter-spacing: 0.4rem !important;
     font-size: var(--text-brand) !important;
-    margin-top: 1.8rem !important;
+    margin-top: 0 !important;
     margin-bottom: 2rem !important;
     font-variant: small-caps !important ;
 }
@@ -58,7 +59,10 @@
 .about-us-container{
     background-color: var(--color-gray);
     color:var(--color-secondary) !important;
-    padding: 2rem !important; 
+    padding-top: 2rem !important; 
+    padding-bottom: 0.1 !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important ;
     text-align: center !important ;
     align-items: center !important;
 }
