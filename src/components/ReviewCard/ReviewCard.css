@@ -23,6 +23,14 @@
 
 .review_card_location{
     color: var(--color-primary-lighter);
-    font-family: var(--font-body) !important;
+    font-family: var(--font-body) !important;    
+}
+
+@media (max-width: 576px) {
     
+    .review_card{
+        margin: 1rem !important;
+        min-width: 35vh !important;
+        padding: 1.5rem !important;
+    }
 }
