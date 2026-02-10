@@ -71,7 +71,7 @@ export default function Questions(){
             </Col>
         </Row>
         
-                <h6>{pre_contact_us} <em>{contact_us} </em></h6>
+                <h6 >{pre_contact_us} <em>{contact_us} </em></h6>
   
     </Container>
     );
