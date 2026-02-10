@@ -8,7 +8,6 @@ export default function Questions(){
     const subheading = "Have questions before getting started? We’ve got you covered.";
     const content = "Explore helpful answers about our services, scheduling, and what to expect when working with us.";
     const pre_contact_us = "Can’t find what you’re looking for?";
-    const contact_us = "Contact us or book a free quote today."; 
 
     const faqs = [
         {
@@ -71,7 +70,9 @@ export default function Questions(){
             </Col>
         </Row>
         
-                <h6 >{pre_contact_us} <em>{contact_us} </em></h6>
+        <h6 className="questions_contact_us">{pre_contact_us} <em><a href="/contact">Contact us</a> to book a free quote today.</em>
+            
+        </h6>
   
     </Container>
     );
