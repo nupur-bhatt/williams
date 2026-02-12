@@ -1,13 +1,37 @@
 .services_container{
     background-color: var(--color-lightergray) !important;
-    padding: 2rem !important;
     text-align: center !important;
     align-items: center !important;
+}
+
+.services_hero{
+    padding: 1rem !important;
+    background-color: var(--color-lightergray);
+}
+
+.services_firstline{
+    font-family: var(--font-body) !important;
+    font-weight: 600 !important;
+    font-size: var(--text-2xl) !important;
+    letter-spacing: 0.1rem ;
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+    padding-left:2rem !important;
+    padding-right:2rem !important;
+}
+
+.services_content{
+    font-family: var(--font-body) !important;
+    font-weight: 600 !important;
+    font-size: var(--text-md) !important;
+    padding-left:2rem !important;
+    padding-right:2rem !important;
 }
 
 .services_row{
     text-align: center !important;
     align-items: center !important;
+    padding: 2rem !important;
 }
 
 .services_heading{
@@ -15,7 +39,7 @@
     font-weight: 500 !important;
     letter-spacing: 0.4rem !important;
     font-size: var(--text-brand) !important;
-    margin-top: 1.8rem !important;
-    margin-bottom: 2rem !important;
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important; 
     font-variant: small-caps !important ;
 }

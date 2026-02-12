@@ -5,8 +5,9 @@ import "./Footer.css";
 
 export default function Footer() {
   return (
-    <footer className="footer">
-      <Container >
+    
+      <Container fluid className="g-0">
+        <footer className="footer">
         <Row className="footer-main">
        
           <Col md={3} className="footer-col">
@@ -17,10 +18,9 @@ export default function Footer() {
           <Col md={3} className="footer-col">
             <h4>Services</h4>
             <ul>
-              <li><a href="/cleaning">Cleaning Services</a></li>
-              <li><a href="/junk-removal">Junk Removal</a></li>
-              <li><a href="/moving">Moving Services</a></li>
-              <li><a href="/commercial">Commercial Services</a></li>
+              <li><a href="/services/cleaning">Cleaning Services</a></li>
+              <li><a href="/services/junkremoval">Junk Removal</a></li>
+              <li><a href="/services/moving">Moving Services</a></li>
             </ul>
           </Col>
 
@@ -41,7 +41,7 @@ export default function Footer() {
             <p>Have questions or need a quote? </p>
             <p><TelephoneFill /> <a href="tel:+16135551234" className="phone-link">(647) 333-5392</a>
                 <br/>
-                 <EnvelopeFill /><a href="mailto:info@williamsinc.com" className="contact-link">info@williamsinc.com</a>
+                 {/* <EnvelopeFill /><a href="mailto:info@williamsinc.com" className="contact-link">business.williams.inc@gmail.com</a> */}
             </p>
             <a className="footer-btn" href="/book">
               Book NOW
@@ -77,7 +77,7 @@ export default function Footer() {
             <p>© {new Date().getFullYear()} Williams Inc. All rights reserved.</p>
           </Col>
         </Row>
+        </footer>
       </Container>
-    </footer>
   );
 }

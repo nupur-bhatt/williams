@@ -7,11 +7,11 @@
     color: var(--color-primary) !important;
     padding: 1.5rem !important;
     align-items: center !important;
-    align-content: center !important;
+    
 }
 
 .review_card_content{
-    font-family: var(--font-tagline) !important;
+    font-family: var(--font-body) !important;
     font-size: var(--text-xl) !important;
     margin-bottom: 2rem !important;
 }

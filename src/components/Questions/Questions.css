@@ -16,8 +16,8 @@
 }
 
 .questions_subheading{
-    font-family: var(--font-tagline) !important;
-    font-weight: 800 !important;
+    font-family: var(--font-body) !important;
+    font-weight: 600 !important;
     font-size: var(--text-2xl) !important;
     letter-spacing: 0.1rem !important;
 }

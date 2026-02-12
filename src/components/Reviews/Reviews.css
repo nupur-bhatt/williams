@@ -29,16 +29,16 @@
 }
 
 .reviews_content{
-    font-family: var(--font-tagline) !important;
+    font-family: var(--font-body) !important;
     font-weight: 500 !important;
-    font-size: var(--text-xl) !important;
+    font-size: var(--text-md) !important;
     padding-right: 2rem !important;
     padding-left: 2rem !important;
     padding-top: 1rem !important
 }
 
 .scroll_container_padding{
-    padding: 1rem !important;
+    padding: 2rem !important;
     padding-bottom: 2rem !important;
     background-color: transparent !important;
 }

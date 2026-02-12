@@ -1,13 +1,14 @@
 .footer {
   background-color: var(--color-primary-dark);
   color: var(--color-lightergray);
-  padding: 4rem 2.5rem 1rem;
+  padding: 4rem 2rem 2rem;
+  margin:0 !important;
 }
 
 .footer-logo {
   font-size: var(--text-4xl) !important;
-  margin-bottom: 1rem !important;
   font-family: var(--font-brand) !important;
+  padding: 1rem !important;
 }
 
 /* Socials under brand */
@@ -90,7 +91,7 @@
   color: #ffffff;
   text-decoration: underline;
   color: var(--color-primary-lighter);
-  font-size: 0.95rem;
+  font-size: small;
   padding-left: 0.5rem !important;
 }
 

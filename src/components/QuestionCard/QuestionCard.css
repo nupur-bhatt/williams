@@ -1,7 +1,7 @@
 .question_card{
     padding-right: 2rem !important;
     padding-left: 2rem !important;
-    padding-top: 2rem !important;
+    padding-top: 1rem !important;
 }
 
 .question_card_header .accordion-button{
@@ -36,9 +36,9 @@
     color: var(--color-primary) !important;
     text-align: left !important;
     padding: 2rem !important;
-    font-family: var(--font-tagline) !important;
-    font-weight: 700 !important;
-    font-size: var(--text-xl) !important;
+    font-family: var(--font-body) !important;
+    font-weight: 600 !important;
+    font-size: var(--text-md) !important;
 }
 
 @media (max-width: 576px) {

@@ -59,7 +59,12 @@ export default function Reviews(){
                     <p className='reviews_subheading'>{secondline}</p>
                     <p className="reviews_content">{content}</p>
                 </Row>
-                <Container fluid className="scroll_container_padding">
+                </Col>
+                <Col xs={12} sm={12} md={6} lg={5} xl={5}>
+                    <Image src={reviews_image} className="review_img"/>
+                </Col>
+                <Row className="g-0">
+                    <Container fluid className="scroll_container_padding">
                     <div className="reviews_scroll_container">
                             <ReviewCard card_info={reviews[0]}/>
                             <ReviewCard card_info={reviews[1]}/>
@@ -70,11 +75,7 @@ export default function Reviews(){
                             <ReviewCard card_info={reviews[6]}/>
                     </div> 
                     </Container>
-                </Col>
-                <Col xs={12} sm={12} md={6} lg={5} xl={5}>
-                    <Image src={reviews_image} className="review_img"/>
-                </Col>
-                
+                </Row>
             </Row>
         </Container>
     );

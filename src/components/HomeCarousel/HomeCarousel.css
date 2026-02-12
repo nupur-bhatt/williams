@@ -41,8 +41,8 @@
   margin-top: 2rem !important;
   margin-bottom: 4rem !important;
   font-size: var(--text-second-tagline) !important;
-  font-family: var(--font-tagline) !important;
-  font-weight: 100 !important;
+  font-family: var(--font-body) !important;
+  font-weight: 300 !important;
 }
 
 /* Button */
@@ -70,7 +70,7 @@
   background: white !important;
   color: var(--color-primary) !important; 
   font-weight: 700 !important;
-  font-size: large !important;
+  transform: translateY(-5px);
   transition: all 0.25s ease !important;
 }
 
@@ -95,9 +95,9 @@
 .gradient-button-call:hover {
   font-family: var(--font-body) !important;
   background: white !important;
-  color: var(--color-primary) !important;
+  color: var(--color-primary) !important; 
   font-weight: 700 !important;
-  font-size: large !important;
+  transform: translateY(-5px);
   transition: all 0.25s ease !important;
 }
 
