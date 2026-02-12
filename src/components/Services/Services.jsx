@@ -8,7 +8,9 @@ import { href } from "react-router-dom";
 
 export default function Services(){
 
-    const services_headline = "Services";
+    const services_headline = "Our services";
+    const services_tagline="From sparkling clean spaces to seamless moves,  we handle the heavy lifting so you don't have to.";
+    const services_content = "Discover the full range of cleaning solutions we offer for residential and commercial spaces. Select a service below to learn more about what’s included and how we can help.";
 
      const cleaning_service_card = {
         heading: "Cleaning",
@@ -29,7 +31,11 @@ export default function Services(){
     return(
         <Container fluid className="g-0 services_container">
             
-            {/* <Row><h2 className="services_heading">{services_headline}</h2></Row> */}
+            <Row className='g-0 services_hero'>
+                <h2 className="services_heading">{services_headline}</h2>
+                <h6 className='services_firstline'>{services_tagline}</h6>
+                <h6 className='services_content'>{services_content}</h6>
+            </Row>
             
             <Row className="g-0 services_row">
                 <Col xs={12} sm={12} md={4} lg={4} xl={4} className="p-2">

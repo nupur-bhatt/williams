@@ -2,7 +2,6 @@
     text-align: center !important;
     align-items: center !important;
     border: none !important;
-    border-radius: 0 !important;
 }
 
 .services_card_button{
@@ -11,7 +10,6 @@
   color: var(--color-secondary) !important;
   background: var(--color-primary) !important;
   border: 15px solid var(--color-lightergray) !important;
-  border-radius: 0 !important;
   width: 100% !important;
   padding: 0 !important;
   transition: all 0.25s ease-out !important;
@@ -33,12 +31,14 @@
   font-weight: 800 !important;
   transition: all 0.25s ease-out !important;
   border: 15px solid white !important;
+  transform: translateY(-10px); 
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
 }
 
 .services_card_img{
     object-fit: cover !important;
-    min-height: 20vh !important;
-    max-height: 20vh !important;
+    min-height: 18vh !important;
+    max-height: 15vh !important;
     width: 100% !important;
     padding: 0 !important;
     opacity: 0.9 !important;
