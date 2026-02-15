@@ -71,6 +71,7 @@
 
 .included_img{
   min-height: 30vh !important;
+  max-height: 40vh !important;
   width:100% !important;
   object-fit:cover !important;
   padding: 1.5rem !important;
