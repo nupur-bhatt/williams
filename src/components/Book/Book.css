@@ -1,0 +1,159 @@
+/* Page Base */
+.booking-page {
+  background-color: var(--color-lightergray);
+  font-family: var(--font-body);
+}
+
+/* ================= HERO ================= */
+
+.booking-hero {
+  padding: 6rem 1rem 4rem;
+  color: var(--color-secondary);
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+}
+
+.booking-hero h1 {
+  font-variant: small-caps !important;
+  font-weight: 400;
+  font-size: var(--text-brand);
+  letter-spacing: 0.2rem;
+  word-spacing:0.3rem !important;
+  margin-bottom:2rem !important;
+}
+
+.booking-sub {
+ font-family: var(--font-body) !important;
+  font-weight: 500 !important;
+  font-size: medium !important;
+}
+
+/* ================= TRUST BAR ================= */
+
+.trust-bar {
+  padding: 2.5rem ;
+  padding-bottom: 0rem !important;
+  background: var(--color-lightergray);
+  color: var(--color-primary);
+}
+
+.trust-bar p {
+padding-top:1rem !important;
+  padding: 2rem;
+  font-weight: 600;
+}
+
+.trust-icon {
+  font-size: 2rem;
+}
+
+/* ================= FORM SECTION ================= */
+
+.booking-form-section {
+  padding: 0rem;
+  background:var(--color-lightergray);
+}
+
+.booking-card {
+    background-color: var(--color-lightergray) !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 2rem;
+}
+
+.booking-card h3 {
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+/* Form Inputs */
+
+.form-control,
+.form-select {
+  border-radius: 8px;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid #e2e8f0;
+  color: var(--color-primary) !important;
+  background-color: transparent !important;
+  font-size: 0.95rem;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--color-primary) !important;
+  color: var(--color-primary) !important;
+  box-shadow: none !important;
+}
+
+.form-label {
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: var(--color-primary);
+}
+
+/* Button */
+.booking-btn {
+  background-color: var(--color-primary) !important;
+  border: none !important;
+  padding: 0.8rem 2.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.booking-btn:hover {
+  background-color: var(--color-primary-dark) !important;
+}
+
+/* ================= PROCESS SECTION ================= */
+
+.process-section {
+  padding: 5rem 1rem;
+  background: var(--color-lightergray);
+}
+
+.process-section h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.process-card {
+  border: none !important;
+  background-color: transparent !important;
+  height: 100% !important;
+  box-shadow: none;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.process-card h6 {
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: var(--color-primary);
+}
+
+.process-card p {
+  font-size: 0.95rem;
+  color:var(--color-primary);
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  .booking-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .booking-sub {
+    font-size: 1rem;
+  }
+
+  .process-section {
+    padding: 3rem 1rem;
+  }
+
+  .booking-form-section {
+    padding: 3rem 1rem;
+  }
+}

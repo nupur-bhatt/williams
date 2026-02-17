@@ -18,12 +18,9 @@
 }
 
 .contact-details-row{
-  padding: 1.25rem !important;
+  padding: 0.5rem !important;
 }
 
-.contact-details-col{
-
-}
 
 .contact-details-container h1{
   font-family: var(--font-body) !important;
@@ -124,8 +121,6 @@
   color: var(--color-accent) !important;
 }
 
-
-
 .contact-form-container{
   background-color: var(--color-lightergray) !important;
   color: var(--color-primary) !important;
@@ -159,20 +154,18 @@
 }
 
 .contact-form-control{
-  background-color: transparent !important;
+  border-radius: 8px;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid #e2e8f0;
   color: var(--color-primary) !important;
-  margin-top: 0.5rem !important;
-  margin-bottom: 0.5rem !important;
-  border: 2px solid transparent !important;
-  border-bottom-color: var(--color-lightgray) !important;
-  border-radius: 0rem !important;
+  background-color: transparent !important;
+  font-size: 0.95rem;
 }
 
 .contact-form-control:focus{
-  border-color: transparent !important;
-  border-bottom-color: var(--color-primary) !important;
+  border-color: var(--color-primary) !important;
+  color: var(--color-primary) !important;
   box-shadow: none !important;
-  outline: 0 !important;
 }
 
 .contact-floating-label{
@@ -184,7 +177,7 @@
   color: var(--color-primary) !important;
   margin-top: 0.5rem !important;
   margin-bottom: 0.5rem !important;
-   border: 2px solid transparent !important;
+   border: 1px solid transparent !important;
   border-color: var(--color-lightgray) !important;
 }
 

@@ -2,10 +2,13 @@ import { GeoFill, TelephoneFill, EnvelopeFill, Facebook, Whatsapp, Instagram } f
 import { Container, Row, Col } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
 import Table from 'react-bootstrap/Table';
-import Map from '../Map/Map';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
+import { useForm } from "react-hook-form";
+import { Alert } from "react-bootstrap";
+import { useState } from "react";
+
 import './Contact.css';
 
 export default function Contact() {
@@ -15,7 +18,20 @@ export default function Contact() {
   const contact = "(647)-333-5392";
   const email = "business.williams.inc@gmail.com";
   const hours_title = "Hours of operation";
+  const [showAlert, setShowAlert] = useState(false);
 
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors }
+  } = useForm();
+
+  const onSubmit = (data) => {
+    console.log("Contact Form Data:", data);
+    setShowAlert(true);
+    reset();
+  };
 
   return (
       <Container fluid className="g-0 contact-container">
@@ -92,11 +108,7 @@ export default function Contact() {
           </Card>
           </Container>
           </Row>
-
-           
         </Col>
-
-
 
 
           <Col xs={12} sm={12} md={12} lg={6} xl={6}>
@@ -108,33 +120,145 @@ export default function Contact() {
                 <h6>Let us make your space shine! <br/> Fill out the form below and we'll get back to you as soon as. possible</h6>
               </Row>
 
-              <Form>
-                  <Row className='g-0'>
-                    
-                      <FloatingLabel controlId='fullNameTextArea' label="Full Name" className='contact-floating-label'>
-                        <Form.Control type="text" placeholder="Full Name" className='contact-form-control'/>
-                      </FloatingLabel> 
-                
-                      <FloatingLabel controlId='addressTextArea' label="Address" className='contact-floating-label'>
-                        <Form.Control type="text" placeholder="Address" className='contact-form-control'/>
-                      </FloatingLabel> 
-           
-                      <FloatingLabel controlId='phoneNumberTextArea' label="Phone Number" className='contact-floating-label'>
-                        <Form.Control type="text" placeholder="Phone Number" className='contact-form-control'/>
-                      </FloatingLabel> 
-                    
-                      <FloatingLabel controlId='emailTextArea' label="Email" className='contact-floating-label'>
-                        <Form.Control type="email" placeholder="Email" className='contact-form-control'/>
-                      </FloatingLabel> 
-                  
-                      <Form.Control as="textarea" rows={4} placeholder="Message" className='contact-textarea-form-control'/>
-               
-                      <Button type="submit" className='g-4 contact-form-submit'>
-                        Submit
-                      </Button>
-           
-                 </Row>
-              </Form>       
+              {showAlert && (
+                <Alert
+                  variant="success"
+                  onClose={() => setShowAlert(false)}
+                  dismissible>
+                  Your service request has been submitted successfully!
+                </Alert>
+              )}
+
+              <Form onSubmit={handleSubmit(onSubmit)}>
+            <Row className="g-0">
+
+              <Form.Group className="mb-3">
+              {/* Full Name */}
+              <FloatingLabel
+                controlId="fullNameTextArea"
+                label="Full Name"
+                className="contact-floating-label"
+              >
+                <Form.Control
+                  type="text"
+                  placeholder="Full Name"
+                  className="contact-form-control"
+                  isInvalid={!!errors.fullName}
+                  {...register("fullName", {
+                    required: "Full name is required"
+                  })}
+                />
+                <Form.Control.Feedback type="invalid">
+                  {errors.fullName?.message}
+                </Form.Control.Feedback>
+              </FloatingLabel>
+              </Form.Group>
+
+
+              {/* Address */}
+              <Form.Group className="mb-3">
+              <FloatingLabel
+                controlId="addressTextArea"
+                label="Address"
+                className="contact-floating-label"
+              >
+                <Form.Control
+                  type="text"
+                  placeholder="Address"
+                  className="contact-form-control"
+                  {...register("address")}
+                />
+              </FloatingLabel>
+              </Form.Group>
+
+
+              {/* Phone */}
+              <Form.Group className="mb-3">
+              <FloatingLabel
+                controlId="phoneNumberTextArea"
+                label="Phone Number"
+                className="contact-floating-label"
+              >
+                <Form.Control
+                  type="text"
+                  placeholder="Phone Number"
+                  className="contact-form-control"
+                  isInvalid={!!errors.phone}
+                  { ...register("phone", {
+                  required: "Phone number is required",
+                  pattern: {
+                    value: /^[0-9]+$/,
+                    message: "Phone number must contain only numbers"
+                  },
+                  minLength: {
+                    value: 10,
+                    message: "Phone number must be at least 10 digits"
+                  }
+                })}
+                />
+                <Form.Control.Feedback type="invalid">
+                  {errors.phone?.message}
+                </Form.Control.Feedback>
+              </FloatingLabel>
+              </Form.Group>
+
+
+              {/* Email */}
+              <Form.Group className="mb-3">
+              <FloatingLabel
+                controlId="emailTextArea"
+                label="Email"
+                className="contact-floating-label"
+              >
+                <Form.Control
+                  type="email"
+                  placeholder="Email"
+                  className="contact-form-control"
+                  isInvalid={!!errors.email}
+                  {...register("email", {
+                    required: "Email is required",
+                    pattern: {
+                      value: /^[^\s@]+@[^\s@]+\.com$/,
+                      message: "Invalid email format"
+                    }
+                  })}
+                />
+                <Form.Control.Feedback type="invalid">
+                  {errors.email?.message}
+                </Form.Control.Feedback>
+              </FloatingLabel>
+              </Form.Group>
+
+
+              {/* Message */}
+                <Form.Group className="mb-3">
+                <Form.Control
+                  as="textarea"
+                  rows={4}
+                  placeholder="Message"
+                  className="contact-textarea-form-control"
+                  isInvalid={!!errors.message}
+                  {...register("message", {
+                    required: "Message is required"
+                  })}
+                />
+                <Form.Control.Feedback type="invalid">
+                  {errors.message?.message}
+                </Form.Control.Feedback>
+                  </Form.Group>
+
+
+              {/* Submit */}
+              <Button
+                type="submit"
+                className="g-4 contact-form-submit"
+              >
+                Submit
+              </Button>
+
+            </Row>
+          </Form>
+
             
           </Row>
           </Container>
