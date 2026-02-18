@@ -17,6 +17,7 @@ import {
 import { useForm } from "react-hook-form";
 import { Alert } from "react-bootstrap";
 import { useState } from "react";
+import axios from "axios";
 import "./Book.css";
 
 export default function Book() {
@@ -27,13 +28,19 @@ export default function Book() {
         reset,
         formState: { errors }
     } = useForm();
+
     const [showAlert, setShowAlert] = useState(false);
 
-    const onSubmit = (data) => {
-        console.log(data);
-        setShowAlert(true);
-        reset();
-    };
+     const onSubmit = async (data) => {
+        try {
+          const response = await axios.post("http://localhost:5000/booking", data);
+          console.log(response.data); 
+          setShowAlert(true);
+          reset();
+        } catch (error) {
+          console.log("Error sending data: ", error);
+        }
+      };
 
   return (
     <Container fluid className="booking-page g-0">
