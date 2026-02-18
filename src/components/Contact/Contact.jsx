@@ -8,6 +8,7 @@ import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import { useForm } from "react-hook-form";
 import { Alert } from "react-bootstrap";
 import { useState } from "react";
+import axios from "axios";
 
 import './Contact.css';
 
@@ -27,11 +28,16 @@ export default function Contact() {
     formState: { errors }
   } = useForm();
 
-  const onSubmit = (data) => {
-    console.log("Contact Form Data:", data);
-    setShowAlert(true);
-    reset();
-  };
+  const onSubmit = async (data) => {
+      try {
+        const response = await axios.post(`${import.meta.env.VITE_API_URL}/contact`, data);
+        // const response = await axios.post(`http://localhost:5000/contact`, data);
+        setShowAlert(true);
+        reset();
+      } catch (error) {
+        console.log("Error sending data: ", error);
+      }
+    };
 
   return (
       <Container fluid className="g-0 contact-container">

@@ -11,8 +11,7 @@ import {
   ShieldCheck,
   Clock,
   CashStack,
-  CalendarCheck,
-  CheckCircleFill
+  CalendarCheck
 } from "react-bootstrap-icons";
 import { useForm } from "react-hook-form";
 import { Alert } from "react-bootstrap";
@@ -34,6 +33,7 @@ export default function Book() {
      const onSubmit = async (data) => {
         try {
           const response = await axios.post(`${import.meta.env.VITE_API_URL}/booking`, data);
+          // const response = await axios.post(`http://localhost:5000/booking`, data);
           setShowAlert(true);
           reset();
         } catch (error) {
