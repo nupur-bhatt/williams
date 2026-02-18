@@ -33,8 +33,7 @@ export default function Book() {
 
      const onSubmit = async (data) => {
         try {
-          const response = await axios.post("http://localhost:5000/booking", data);
-          console.log(response.data); 
+          const response = await axios.post(`${import.meta.env.VITE_API_URL}/booking`, data);
           setShowAlert(true);
           reset();
         } catch (error) {
